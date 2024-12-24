@@ -1,6 +1,7 @@
 ## CodeGator.Passwords: 
 ---
 
+[![Build Status](https://dev.azure.com/codegator/CodeGator.Passwords/_apis/build/status%2FCodeGator.CodeGator.Passwords?branchName=main)](https://dev.azure.com/codegator/CodeGator.Passwords/_build/latest?definitionId=121&branchName=main)
 
 #### What does it do?
 This package contains password services used by various CodeGator solutions.
