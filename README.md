@@ -3,6 +3,10 @@
 
 [![Build Status](https://dev.azure.com/codegator/CodeGator.Passwords/_apis/build/status%2FCodeGator.CodeGator.Passwords?branchName=main)](https://dev.azure.com/codegator/CodeGator.Passwords/_build/latest?definitionId=121&branchName=main)
 
+![NuGet Version](https://img.shields.io/nuget/v/CodeGator.Passwords)
+
+![NuGet Downloads](https://img.shields.io/nuget/dt/CodeGator.Passwords)
+
 #### What does it do?
 This package contains password services used by various CodeGator solutions.
 
