@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 namespace CodeGator.Passwords;
 
 /// <summary>
-/// Unit tests for <see cref="IPasswordService"/> (<see cref="PasswordService"/>).
+/// This class contains unit tests for <see cref="PasswordService"/>.
 /// </summary>
 [TestClass]
 public sealed class PasswordServiceTests

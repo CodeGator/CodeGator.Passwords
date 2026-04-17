@@ -6,11 +6,6 @@ namespace CodeGator.Passwords;
 /// </summary>
 public class PasswordParameters
 {
-    // *******************************************************************
-    // Properties.
-    // *******************************************************************
-
-    #region Properties
 
     /// <summary>
     /// This property contains the number of upper case characters to use
@@ -35,6 +30,4 @@ public class PasswordParameters
     /// a password.  
     /// </summary>
     public int Numbers { get; set; }
-
-    #endregion
 }

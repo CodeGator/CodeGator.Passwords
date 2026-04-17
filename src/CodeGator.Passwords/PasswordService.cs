@@ -2,21 +2,15 @@
 namespace CodeGator.Passwords;
 
 /// <summary>
-/// This class is a default implementation of the <see cref="IPasswordService"/>    
-/// interface.
+/// This class is the default <see cref="IPasswordService"/> implementation.
 /// </summary>
-/// <param name="randomNumberGenerator">The random number generator to use with this service.</param>
-/// <param name="logger">The logger to use with this service.</param>
+/// <param name="randomNumberGenerator">The RNG used when sampling password characters.</param>
+/// <param name="logger">The logger used when password generation fails.</param>
 internal class PasswordService(
     [NotNull] RandomNumberGenerator randomNumberGenerator,
     [NotNull] ILogger<PasswordService> logger
     ) : IPasswordService
 {
-    // *******************************************************************
-    // Public methods.
-    // *******************************************************************
-
-    #region Public methods
 
     /// <inheritdoc/>
     public async Task<string> GeneratePasswordAsync(
@@ -70,20 +64,15 @@ internal class PasswordService(
         }
     }
 
-    #endregion
-
-    // *******************************************************************
     // Private methods.
-    // *******************************************************************
-
-    #region Private methods
 
     /// <summary>
-    /// This method generates a password containing random characters.
+    /// This method builds a password string from random character buckets.
     /// </summary>
+    /// <param name="parameters">The counts and rules that define the password shape.</param>
     /// <param name="cancellationToken">A cancellation token that is monitored
     /// for a cancellation request throughout the lifetime of the method.</param>
-    /// <returns>A task to perform the operation that returns a password.</returns>
+    /// <returns>A task that completes with the generated password.</returns>
     private Task<string> GenerateCharactersAsync(
         [NotNull] PasswordParameters parameters,
         CancellationToken cancellationToken = default
@@ -130,6 +119,4 @@ internal class PasswordService(
         var password = sb.ToString();
         return Task.FromResult(password);
     }
-
-    #endregion
 }

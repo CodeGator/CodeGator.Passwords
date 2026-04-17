@@ -14,8 +14,8 @@ public interface IPasswordService
     /// <param name="cancellationToken">A cancellation token that is monitored
     /// for a cancellation request throughout the lifetime of the method.</param>
     /// <returns>A task to perform the operation that returns a password.</returns>
-    /// <exception cref="ArgumentException">This exception is throw whenever one or
-    /// more arguments are missing, or invalid.</exception>
+    /// <exception cref="ArgumentNullException">This exception is thrown when
+    /// <paramref name="parameters"/> is <see langword="null"/>.</exception>
     /// <exception cref="ServiceException">This exception is thrown whenever the 
     /// service fails to complete the operation.</exception>
     Task<string> GeneratePasswordAsync(

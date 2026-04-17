@@ -5,7 +5,7 @@ using Microsoft.Extensions.Hosting;
 namespace CodeGator.Passwords;
 
 /// <summary>
-/// Unit tests for <see cref="HostApplicationBuilderExtensions"/>.
+/// This class contains tests for host password service registration extensions.
 /// </summary>
 [TestClass]
 public sealed class HostApplicationBuilderExtensionsTests
