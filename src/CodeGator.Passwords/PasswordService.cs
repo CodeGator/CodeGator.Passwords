@@ -3,6 +3,7 @@ namespace CodeGator.Passwords;
 
 /// <summary>
 /// This class is the default <see cref="IPasswordService"/> implementation.
+/// This constructor initializes a new instance of the <see cref="PasswordService"/> class.
 /// </summary>
 /// <param name="randomNumberGenerator">The RNG used when sampling password characters.</param>
 /// <param name="logger">The logger used when password generation fails.</param>
